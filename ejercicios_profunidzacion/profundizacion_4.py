@@ -33,3 +33,43 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+word_1 = str(input("insert first word"))
+word_2 = str(input("insert second word"))
+word_3 = str(input("insert third word"))
+
+length_word_1 = len(word_1)
+lenght_word_2 = len(word_2)
+lenght_word_3 = len(word_3)
+
+order = int(input("insert 1 if your would like to order alphabetically or 2 if you would like to oder by number of letters: "))
+
+if (order == 1):
+    if (word_1 >= word_2) and (word_1 >= word_3) and (word_2 >= word_3):
+        print("order: ", word_1, word_2, word_3)
+    elif (word_1 >= word_2) and (word_1 >= word_3) and (word_3 >= word_2):
+        print("order: ", word_1, word_3, word_2)
+    elif (word_2 >= word_1) and (word_2 >= word_3) and (word_1 >= word_3):
+        print("order: ", word_2, word_1, word_3)
+    elif (word_2 >= word_1) and (word_2 >= word_3) and (word_3 >= word_1):
+        print("order: ", word_2, word_3, word_1)
+    elif (word_3 >= word_1) and (word_3 >= word_2) and (word_1 >= word_2):
+        print("order: ", word_3, word_1, word_2)
+    elif (word_3 >= word_1) and (word_3 >= word_2) and (word_2 >= word_1):
+        print("order: ", word_3, word_2, word_1)
+
+elif (order == 2):
+    if (length_word_1 >= lenght_word_2) and (length_word_1 >= lenght_word_3) and (lenght_word_2 >= lenght_word_3):
+        print("order: ", length_word_1, lenght_word_2, lenght_word_3)
+    elif (length_word_1 >= lenght_word_2) and (length_word_1 >= lenght_word_3) and (lenght_word_3 >= lenght_word_2):
+        print("order: ", length_word_1, lenght_word_3, lenght_word_2)
+    elif (lenght_word_2 >= length_word_1) and (lenght_word_2 >= lenght_word_3) and (length_word_1 >= lenght_word_3):
+        print("order: ", lenght_word_2, length_word_1, lenght_word_3)
+    elif (lenght_word_2 >= length_word_1) and (lenght_word_2 >= lenght_word_3) and (lenght_word_3 >= length_word_1):
+        print("order: ", lenght_word_2, lenght_word_3, length_word_1)
+    elif (lenght_word_3 >= length_word_1) and (lenght_word_3 >= lenght_word_2) and (length_word_1 >= lenght_word_2):
+        print("order: ", lenght_word_3, length_word_1, lenght_word_2)
+    elif (lenght_word_3 >= length_word_1) and (lenght_word_3 >= lenght_word_2) and (lenght_word_2 >= length_word_1):
+        print("order: ", lenght_word_3, lenght_word_2, length_word_1)
+
+    

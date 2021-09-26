@@ -30,3 +30,28 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+temperatura_1 = float(input("ingerese la temperatura"))
+temperatura_2 = float(input("ingerese la temperatura"))
+temperatura_3 = float(input("ingerese la temperatura"))
+
+#temperatura maxima
+if (temperatura_1 > temperatura_2 and temperatura_3 < temperatura_2):
+    print (temperatura_1, "tiene la temperatura maxima")
+elif (temperatura_2 > temperatura_1 and temperatura_3 < temperatura_1):
+    print (temperatura_2, "tiene la temperatura maxima")
+else:
+    print (temperatura_3, "tiene la temperatura maxima")
+
+#temperatura minima
+if (temperatura_1 < temperatura_2 and temperatura_3 > temperatura_2):
+    print (temperatura_1, "tiene la temperatura minima")
+elif (temperatura_2 < temperatura_1 and temperatura_3 > temperatura_1):
+    print (temperatura_2, "tiene la temperatura minima")
+else: 
+    print (temperatura_3, "tiene la temperatura minima")
+
+#promedio temperaturas
+promedio = (temperatura_1 + temperatura_2 + temperatura_3) / 3
+print ("el promedio de las temperaturs es:", promedio)
+
